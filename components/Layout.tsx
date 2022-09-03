@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 
 function Layout({ children }: any) {
 	return (
-		<div>
+		<div className="h-screen">
 			<Navbar />
-			<main className="h-screen">{children}</main>
+			{children}
 			<Footer />
 		</div>
 	);

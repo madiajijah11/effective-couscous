@@ -15,7 +15,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const Cats: NextPage = ({ cats }: any) => {
 	return (
-		<>
+		<div>
 			<Head>
 				<title>Cats List</title>
 			</Head>
@@ -43,7 +43,7 @@ const Cats: NextPage = ({ cats }: any) => {
 					</div>
 				</section>
 			</div>
-		</>
+		</div>
 	);
 };
 

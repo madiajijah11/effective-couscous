@@ -1,33 +1,31 @@
+import { url } from "inspector";
 import type { NextPage } from "next";
 import Head from "next/head";
 
 const Home: NextPage = () => {
 	return (
-		<>
+		<div>
 			<Head>
 				<title>Homepage</title>
 				<meta name="keywords" content="cats" />
 			</Head>
-			<div className="text-center">
-				<h1 className="text-5xl font-normal leading-normal mt-0 mb-2">Homepage</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sed vero
-					molestias voluptas, consectetur nobis hic assumenda reprehenderit alias id,
-					necessitatibus earum! Ad, consequatur? Fugiat natus consectetur animi tenetur
-					deleniti!
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus
-					quibusdam vitae ducimus neque, illo recusandae voluptates sint debitis, aperiam
-					maxime corporis incidunt quas, cupiditate ipsum enim voluptatem dignissimos sed.
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, est nisi.
-					Ducimus distinctio deserunt commodi soluta eligendi voluptatibus. Vel labore
-					officia itaque perspiciatis tempore perferendis vero, sint illo quidem cumque.
-				</p>
+			<div
+				className="hero min-h-screen"
+				style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
+				<div className="hero-overlay bg-opacity-60"></div>
+				<div className="hero-content text-center text-neutral-content">
+					<div className="max-w-md">
+						<h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+						<p className="mb-5">
+							Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+							excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
+							id nisi.
+						</p>
+						<button className="btn btn-primary">Get Started</button>
+					</div>
+				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 
