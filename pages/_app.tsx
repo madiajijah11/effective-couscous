@@ -11,9 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	return (
 		<Layout>
-			<main className="h-screen">
-				<Component {...pageProps} />
-			</main>
+			<Component {...pageProps} />
 		</Layout>
 	);
 }

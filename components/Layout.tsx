@@ -6,7 +6,7 @@ function Layout({ children }: any) {
 	return (
 		<div>
 			<Navbar />
-			{children}
+			<main className="h-screen">{children}</main>
 			<Footer />
 		</div>
 	);
