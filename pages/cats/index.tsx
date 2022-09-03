@@ -28,7 +28,7 @@ const Cats: NextPage = ({ cats }: any) => {
 					<div className="grid grid-cols-3 justify-center gap-3">
 						{cats ? (
 							cats.map((cat: any) => (
-								<div key={cat.id} className="card">
+								<div key={cat.id} className="card shadow-xl">
 									<figure>
 										<img src={cat.url} alt={cat.id} />
 									</figure>
