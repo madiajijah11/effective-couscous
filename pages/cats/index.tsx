@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = async () => {
 	const res = await fetch(
-		"https://api.thecatapi.com/v1/images/search?limit=12&api_key=live_2F69qqLovCi8LyeH6B6zPetMDbUkOJTp2UkBsKLsHL0y4puMETLgz28sfFgQwVY8"
+		"https://api.thecatapi.com/v1/images/search?limit=21&api_key=live_2F69qqLovCi8LyeH6B6zPetMDbUkOJTp2UkBsKLsHL0y4puMETLgz28sfFgQwVY8"
 	);
 	const data = await res.json();
 
@@ -20,7 +20,7 @@ const Cats: NextPage = ({ cats }: any) => {
 				<title>Cats List</title>
 			</Head>
 			<div className="text-center">
-				<h1 className="text-5xl font-normal leading-normal mt-0 mb-2">All Cats</h1>
+				<h1 className="text-5xl font-normal leading-normal mt-0 mb-2">Cats</h1>
 			</div>
 			<hr />
 			<div>
@@ -30,7 +30,11 @@ const Cats: NextPage = ({ cats }: any) => {
 							cats.map((cat: any) => (
 								<div key={cat.id} className="card shadow-xl">
 									<figure>
-										<img src={cat.url} alt={cat.id} />
+										<img
+											src={cat.url}
+											alt={cat.id}
+											className="w-full h-full"
+										/>
 									</figure>
 								</div>
 							))
