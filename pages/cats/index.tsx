@@ -19,8 +19,10 @@ const Cats: NextPage = ({ cats }: any) => {
 			<Head>
 				<title>Cats List</title>
 			</Head>
-			<div>
-				<h1 className="text-center">All Cats</h1>
+			<div className="flex justify-center">
+				<div className="prose">
+					<h1 className="text-center">All Cats</h1>
+				</div>
 			</div>
 			<hr />
 			<div>
