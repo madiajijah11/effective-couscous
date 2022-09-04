@@ -56,17 +56,6 @@ function Navbar() {
 					<ul
 						tabIndex={0}
 						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-						<div>
-							<select
-								className="select select-ghost w-full max-w-xs"
-								data-choose-theme>
-								{themes.map((theme) => (
-									<option key={theme} value={theme}>
-										{theme.toLocaleUpperCase()}
-									</option>
-								))}
-							</select>
-						</div>
 						<li>
 							<Link href="/">
 								<a>Homepage</a>
@@ -84,10 +73,25 @@ function Navbar() {
 						</li>
 					</ul>
 				</div>
-				<a className="btn btn-ghost normal-case text-xl">Effective Couscous</a>
+				<a className="btn btn-ghost normal-case text-xl">EC</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal p-0">
+					<li>
+						<Link href="/">
+							<a>Homepage</a>
+						</Link>
+					</li>
+					<li>
+						<Link href="/cats">
+							<a>Cats</a>
+						</Link>
+					</li>
+					<li>
+						<Link href="/about">
+							<a>About</a>
+						</Link>
+					</li>
 					<div className="dropdown dropdown-end">
 						<div tabIndex={0} className="btn gap-1 normal-case btn-ghost">
 							<span className="hidden md:inline">Theme</span>
@@ -135,25 +139,11 @@ function Navbar() {
 							</div>
 						</div>
 					</div>
-					<li>
-						<Link href="/">
-							<a>Homepage</a>
-						</Link>
-					</li>
-					<li>
-						<Link href="/cats">
-							<a>Cats</a>
-						</Link>
-					</li>
-					<li>
-						<Link href="/about">
-							<a>About</a>
-						</Link>
-					</li>
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<a className="btn">Get started</a>
+				<a className="btn btn-outline mr-1">Sign In</a>
+				<a className="btn btn-outline mr-1">Sign Up</a>
 			</div>
 		</div>
 	);

@@ -30,11 +30,7 @@ const Cats: NextPage = ({ cats }: any) => {
 							cats.map((cat: any) => (
 								<div key={cat.id} className="card shadow-xl">
 									<figure>
-										<img
-											src={cat.url}
-											alt={cat.id}
-											className="w-full h-full"
-										/>
+										<img src={cat.url} alt={cat.id} className="w-full h-full" />
 									</figure>
 								</div>
 							))
